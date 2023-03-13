@@ -7,8 +7,386 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>Задачи JS</title>
+    <link rel="stylesheet" href="/Style.css" />
     <link rel="icon" href="Icon.png" />
-    <script src="/Задачи JS. Главы 1-5.js"></script>
+
+
+
   </head>
-  <body></body>
+    <body id="body">
+        <div id="clock">
+          <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span>
+        </div>
+        <input type="button" onclick="Start()" value="Start">
+        <input type="button" onclick="Stop()" value="Stop">
+        <h2>Уведомление находится справа</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum aspernatur quam ex eaque inventore quod voluptatem adipisci omnis nemo nulla fugit iste numquam ducimus cumque minima porro ea quidem maxime necessitatibus beatae labore soluta voluptatum
+          magnam consequatur sit laboriosam velit excepturi laborum sequi eos placeat et quia deleniti? Corrupti velit impedit autem et obcaecati fuga debitis nemo ratione iste veniam amet dicta hic ipsam unde cupiditate incidunt aut iure ipsum officiis soluta
+          temporibus. Tempore dicta ullam delectus numquam consectetur quisquam explicabo culpa excepturi placeat quo sequi molestias reprehenderit hic at nemo cumque voluptates quidem repellendus maiores unde earum molestiae ad.
+        </p>    
+      <div id="field">
+        <img src="https://en.js.cx/clipart/ball.svg" id="ball"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+      </div>
+      Кликните в любом месте для получения координат в контексте окна.
+      <br> Это для тестирования, чтобы проверить результат, который вы получили с помощью JavaScript.
+      <br>
+      <div id="coords">(координаты покажутся здесь)</div>
+      <div id="field1">
+        . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+      </div>
+      <div class="triangle-right" style="left:-20px;top:-176px">1</div>
+      <div class="triangle-right" style="left:-10px;top:-178px">3</div>
+      <div class="triangle-right" style="left:190px;top:-40px">4</div>
+      <div class="triangle-right" style="left:200px;top:-42px">2</div>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sint atque dolorum fuga ad incidunt voluptatum error fugiat animi amet! Odio temporibus nulla id unde quaerat dignissimos enim nisi rem provident molestias sit tempore omnis recusandae
+        esse sequi officia sapiente.</p>
+      <blockquote>
+        Teacher: Why are you late?
+        Student: There was a man who lost a hundred dollar bill.
+        Teacher: That's nice. Were you helping him look for it?
+        Student: No. I was standing on it.
+      </blockquote>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sint atque dolorum fuga ad incidunt voluptatum error fugiat animi amet! Odio temporibus nulla id unde quaerat dignissimos enim nisi rem provident molestias sit tempore omnis recusandae
+        esse sequi officia sapiente.</p>
+
+        <input type="button" id="hider" value="Нажмите, чтобы спрятать текст" />
+
+        <div id="text">Текст</div>
+      
+        <input type="button" onclick="this.hidden=true" value="Нажми, чтобы спрятать">
+
+
+        Нажмите на поле для перемещения мяча.
+        <br>
+          <div id="field2">
+          <img src="https://ru.js.cx/clipart/ball.svg" id="ball2"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+          . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+        </div>
+        <span class="title">Сладости (нажми меня)!</span>
+        <ul class="rol">
+          <li>Пирожное</li>
+          <li>Пончик</li>
+          <li>Мёд</li>
+        </ul>
+      <div id="container">
+        <div class="pane">
+          <h3>Лошадь</h3>
+          <p>Домашняя лошадь - животное семейства непарнокопытных, одомашненный и единственный сохранившийся подвид дикой лошади, вымершей в дикой природе, за исключением небольшой популяции лошади Пржевальского.</p>
+          <button class="remove-button">[x]</button>
+        </div>
+        <div class="pane">
+          <h3>Осёл</h3>
+          <p>Домашний осёл или ишак — одомашненный подвид дикого осла, сыгравший важную историческую роль в развитии хозяйства и культуры человека. Все одомашненные ослы относятся к африканским ослам.</p>
+          <button class="remove-button">[x]</button>
+        </div>
+        <div class="pane">
+          <h3>Кошка</h3>
+          <p>Кошка, или домашняя кошка (лат. Félis silvéstris cátus), — домашнее животное, одно из наиболее популярных (наряду с собакой) "животных-компаньонов". С точки зрения научной систематики, домашняя кошка — млекопитающее семейства кошачьих отряда хищных. Ранее домашнюю кошку нередко рассматривали как отдельный биологический вид.
+          </p>
+          <button class="remove-button">[x]</button>
+        </div>
+      </div>
+          <div id="carousel" class="carousel">
+            <button class="arrow prev">⇦</button>
+            <div class="gallery">
+              <ul>
+                <li><img src="https://ru.js.cx/carousel/1.png"></li>
+                <li><img src="https://ru.js.cx/carousel/2.png"></li>
+                <li><img src="https://ru.js.cx/carousel/3.png"></li>
+                <li><img src="https://ru.js.cx/carousel/4.png"></li>
+                <li><img src="https://ru.js.cx/carousel/5.png"></li>
+                <li><img src="https://ru.js.cx/carousel/6.png"></li>
+                <li><img src="https://ru.js.cx/carousel/7.png"></li>
+                <li><img src="https://ru.js.cx/carousel/8.png"></li>
+                <li><img src="https://ru.js.cx/carousel/9.png"></li>
+                <li><img src="https://ru.js.cx/carousel/10.png"></li>
+              </ul>
+            </div>
+            <button class="arrow next">⇨</button> 
+            
+      <ul class="tree" id="tree">
+        <li>Животные
+          <ul>
+            <li>Млекопитающие
+              <ul>
+                <li>Коровы</li>
+                <li>Ослы</li>
+                <li>Собаки</li>
+                <li>Тигры</li>
+              </ul>
+            </li>
+            <li>Другие
+              <ul>
+                <li>Змеи</li>
+                <li>Птицы</li>
+                <li>Ящерицы</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Рыбы
+          <ul>
+            <li>Аквариумные
+              <ul>
+                <li>Гуппи</li>
+                <li>Скалярии</li>
+              </ul>
+            </li>
+            <li>Морские
+              <ul>
+                <li>Морская форель</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      
+
+    <table id="grid">
+      <thead>
+        <tr>
+          <th data-type="number">Возраст</th>
+          <th data-type="string">Имя</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>5</td>
+          <td>Вася</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Петя</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Женя</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Маша</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Илья</td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    <p>ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя</p>
+    <p>ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя</p>
+
+    <button data-tooltip="эта подсказка должна быть длиннее, чем элемент">Короткая кнопка</button>
+    <button data-tooltip="HTML<br>подсказка">Ещё кнопка</button>
+
+    <p>Прокрутите страницу, чтобы кнопки оказались у верхнего края, а затем проверьте, правильно ли выводятся подсказки.</p>
+
+
+    <fieldset id="contents">
+      <legend>#contents</legend>
+      <p>
+        Как насчёт того, чтобы прочитать <a href="https://wikipedia.org">Википедию</a> или посетить <a href="https://w3.org"><i>W3.org</i></a> и узнать о современных стандартах?
+      </p>
+    </fieldset>
+  
+    <p><img id="largeImg" src="https://en.js.cx/gallery/img1-lg.jpg" alt="Large image"></p>
+
+    <ul id="thumbs">
+      <li>
+        <a href="https://en.js.cx/gallery/img2-lg.jpg" title="Image 2"><img src="https://en.js.cx/gallery/img2-thumb.jpg"></a>
+      </li>
+      <li>
+        <a href="https://en.js.cx/gallery/img3-lg.jpg" title="Image 3"><img src="https://en.js.cx/gallery/img3-thumb.jpg"></a>
+      </li>
+      <li>
+        <a href="https://en.js.cx/gallery/img4-lg.jpg" title="Image 4"><img src="https://en.js.cx/gallery/img4-thumb.jpg"></a>
+      </li>
+      <li>
+        <a href="https://en.js.cx/gallery/img5-lg.jpg" title="Image 5"><img src="https://en.js.cx/gallery/img5-thumb.jpg"></a>
+      </li>
+      <li>
+        <a href="https://en.js.cx/gallery/img6-lg.jpg" title="Image 6"><img src="https://en.js.cx/gallery/img6-thumb.jpg"></a>
+      </li>
+    </ul>
+  
+    <select id="genres">
+      <option value="rock">Рок</option>
+      <option value="blues" selected>Блюз</option>
+    </select>
+
+    
+  <ul>
+    <li>Кликните на div ниже, чтобы отредактировать текст.</li>
+    <li>Нажатие на Enter или потеря фокуса с ввода сохранят содержимое.</li>
+  </ul>
+
+  HTML-код разрешён.
+
+  <div id="view" class="view">Текст</div>
+
+  
+
+  <p>Кликните на ячейку таблицы, чтобы редактировать её. Нажмите ОК или ОТМЕНА, когда закончите.</p>
+
+  <table id="bagua-table">
+    <tr>
+      <th colspan="3">Квадрат <em>Bagua</em>: Направление, Элемент, Цвет, Значение</th>
+    </tr>
+    <tr>
+      <td class="nw"><strong>Северо-Запад</strong>
+        <br>Металл
+        <br>Серебро
+        <br>Старейшины
+      </td>
+      <td class="n"><strong>Север</strong>
+        <br>Вода
+        <br>Синий
+        <br>Перемены
+      </td>
+      <td class="ne"><strong>Северо-Восток</strong>
+        <br>Земля
+        <br>Жёлтый
+        <br>Направление
+      </td>
+    </tr>
+    <tr>
+      <td class="w"><strong>Запад</strong>
+        <br>Металл
+        <br>Золото
+        <br>Молодость
+      </td>
+      <td class="c"><strong>Центр</strong>
+        <br>Всё
+        <br>Пурпурный
+        <br>Гармония
+      </td>
+      <td class="e"><strong>Восток</strong>
+        <br>Дерево
+        <br>Синий
+        <br>Будущее
+      </td>
+    </tr>
+    <tr>
+      <td class="sw"><strong>Юго-Запад</strong>
+        <br>Земля
+        <br>Коричневый
+        <br>Спокойствие
+      </td>
+      <td class="s"><strong>Юг</strong>
+        <br>Огонь
+        <br>Оранжевый
+        <br>Слава
+      </td>
+      <td class="se"><strong>Юго-Восток</strong>
+        <br>Дерево
+        <br>Зеленый
+        <br>Роман
+      </td>
+    </tr>
+
+</table>
+
+
+
+<p>Кликните по "изображению" мыши и перемещайте её с помощью клавиш со стрелками.</p>
+
+<pre id="mouse">
+ _   _
+(q\_/p)
+ /. .\
+=\_t_/=   __
+ /   \   (
+((   ))   )
+/\) (/\  /
+\  Y  /-'
+ nn^nn
+</pre>
+
+
+
+Депозитный калькулятор.
+
+<form name="calculator">
+  <table>
+    <tr>
+      <td>Первоначальный депозит</td>
+      <td>
+        <input name="money" type="number" value="10000" required>
+      </td>
+    </tr>
+    <tr>
+      <td>Срок вклада?</td>
+      <td>
+        <select name="months">
+          <option value="3">3 (минимум)</option>
+          <option value="6">6 (полгода)</option>
+          <option value="12" selected>12 (год)</option>
+          <option value="18">18 (1.5 года)</option>
+          <option value="24">24 (2 года)</option>
+          <option value="30">30 (2.5 года)</option>
+          <option value="36">36 (3 года)</option>
+          <option value="60">60 (5 лет)</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Годовая процентная ставка?</td>
+      <td>
+        <input name="interest" type="number" value="5" required>
+      </td>
+    </tr>
+  </table>
+
+
+</form>
+
+
+<table id="diagram">
+  <tr>
+    <th>Было:</th>
+    <th>Станет:</th>
+  </tr>
+  <tr>
+    <th id="money-before"></th>
+    <th id="money-after"></th>
+  </tr>
+  <td>
+    <div style="background: red;width:40px;height:100px"></div>
+  </td>
+  <td>
+    <div style="background: green;width:40px;height:0" id="height-after"></div>
+  </td>
+</table>
+
+<h2>Кликните на кнопку ниже</h2>
+
+  <input type="button" value="Кликните, чтобы увидеть форму" id="show-button">
+
+
+  <div id="prompt-form-container">
+    <form id="prompt-form">
+      <div id="prompt-message"></div>
+      <input name="text" type="text">
+      <input type="submit" value="Ok">
+      <input type="button" name="cancel" value="Отмена">
+    </form>
+  </div>
+  
+    <script src="/Задачи JS. Главы 1-5.js"></script>
+    <script src="/Задачи Js. Глава 6.js""></script>
+    <script src="/Задачи Js. Глава 8.js""></script>
+    <script src="/Задачи Браузер. Глава 1.js""></script>
+    <script src="/Задачи Браузер. Глава 2.js""></script>
+    <script src="/Задачи Браузер. Глава 4.js""></script>
+    <script src="https://ru.js.cx/test/libs.js"></script>
+    <script src="/Задачи Сетевые запросы.js"></script>
+
+
+  </body>
 </html>
