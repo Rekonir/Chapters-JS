@@ -1,3 +1,4 @@
+/*
 async function getUsers(names) {
     let accs = [];
     for (let name of names) {
@@ -27,4 +28,4 @@ describe("getUsers", function () {
         assert.equal(users[2], null);
     });
 
-});
+});*/
